@@ -31,8 +31,30 @@
    }
  }
 
+var arcStyles = {
+  fill: function(d) {
+    if (d.id == "alpha") {
+      return "#c4dc39";
+    }
+    if (d.id == "beta") {
+      return "#fcda51";
+    }
+    if (d.id == "chi") {
+      return "#5ec9cf";
+    }
+    if (d.id == "delta") {
+      return "#499dec";
+    }
+    if (d.id == "epsilon") {
+      return "#f5b443";
+    }
+
+  }
+};
+
  pie
     .config(settings)
+    .shapeConfig(arcStyles)
     .render();
 
 
