@@ -14,7 +14,7 @@
       <br />
 
 <script>
- var data = [
+ var myDataArray = [
    {id: "alpha",   income: 2301},
    {id: "beta",    income: 1121},
    {id: "chi",     income: 4570},
@@ -24,11 +24,15 @@
 
  var pie = new d3plus.Pie()
 
+ var settings ={
+   data:myDataArray,
+   value: function(d) {
+     return d.income;
+   }
+ }
+
  pie
-    .data(data)
-    .value(function(d) {
-      return d.income;
-    })
+    .config(settings);
     .render();
 
 
