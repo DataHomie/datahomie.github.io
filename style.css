@@ -1,11 +1,16 @@
+body
+  {
+    background-color: #434343;
+  }
+
 h1
   {
-  color: Blue;
+  color: #eb6661;
   font-size: 70px
   }
 
 p
   {
-  color: red;
+  color: #f5b443;
   font-size: 32px
   }
