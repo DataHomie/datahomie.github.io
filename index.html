@@ -4,13 +4,28 @@
     <head>   <!-- Head must come before the body. Indents save lives, but don't matter. -->
       <meta charset="utf-8" /> <!-- UTF is unicode 8bit, emojis give you errors here because basic. -->
       <title>Hackathon</title>
+      <style>
+        p{
+          color: blue;
+          font-size: 32px;
+        }
+      </style>
+
+      <style>
+        p.redParagraph {
+          color: red;
+          font-size: 32px
+        }
+      </style>
     </head>                    <!-- Use UTF 16 or 32 to avoid Unicode emojis error (japanese characters) -->
+
+
     <body style="background-color:#551a8b;">
 
       <h1><strong><font color="red">Hello World!</font></strong></h1>
-      <br />We've entered the atomic age.
+      <br /> <p>We've entered the atomic age.</p>
       <br /> It's tight.
-      <br /> <strong>Boop.</strong>
+      <br /> <p class="redParagraph">some Text</p>
 
 
     </body>
