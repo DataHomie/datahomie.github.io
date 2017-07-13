@@ -1,0 +1,109 @@
+<!DOCTYPE HTML> <!-- Tells Browser to use updated criteria for rendering websites. -->
+<html>
+
+    <head>   <!-- Head must come before the body. Indents save lives, but don't matter. -->
+      <meta charset="utf-8" /> <!-- UTF is unicode 8bit, emojis give you errors here because basic. -->
+      <title>Hackathon</title> <!-- Use UTF 16 or 32 to avoid Unicode emojis error (japanese characters) -->
+      <link rel="stylesheet" href="style.css" />
+<script src="https://d3plus.org/js/d3plus.v2.0.0-alpha.13.full.min.js"></script>
+      </head>
+
+<body>
+      <br /> <h1>Hello World!</h1>
+      <p>Welcome to the atomic age.</p>
+
+
+<script> //Numbers
+  var myNumber = 42;
+
+  myNumber = myNumber + 10;
+
+  console.log(myNumber);
+</script>
+
+<script> //Strings
+  var myString = 'Javascript is Cool';
+  console.log("D3Plus and " + myString);
+</script>
+
+<script> //Arrays
+var myArray = ["one", "two", "three", "four"];
+//commenting in Javascript. Javascript is anything in a Script tag
+console.log(myArray[1]);
+</script>
+
+<script> //Objects
+  var myObject = {
+      handle: "@MikeLindle",
+      color: "red"
+  };
+  console.log(myObject.handle);
+</script>
+
+
+<script> // Function
+var sayHello = function() {
+  console.log("Hello!");
+
+  sayHello();
+}
+
+</script>
+
+<script> // Function
+var sayText = function(txt) {
+  console.log(txt);
+
+  sayText("Goodbye");
+}
+
+</script>
+
+<script> // Function
+var plusTen = function(num) {
+    return num+10
+}
+
+var thirty = plusTen(20);
+console.log(thirty);
+</script>
+
+
+<script> // Function
+var myNumber = 20;
+var bigNumber = myNumber>100;
+console.log(bigNumber);
+</script>
+
+
+
+<script> // Function
+function greaterThanTen(num){
+  if (num>10){
+    console.log("greater than 10!")
+  }
+  else {
+    console.log("Less than 10!")
+  }
+}
+</script>
+
+<h1 id="name"></h1>
+<!--
+<script> // Did not complete this function
+  document.getElementByID("name").
+</script>
+-->
+
+<script>
+
+</script>
+
+<script>
+  console.log(d3plus);
+</script>
+
+
+    </body>
+
+</html>
