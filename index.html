@@ -11,16 +11,26 @@
 <body>
       <br /> <h1>Hello World!</h1>
       <p>Welcome to the atomic age.</p>
+      <br />
 
 <script>
  var data = [
-   {id: "alpha", value: 20},
-   {id: "beta", value: 30}
+   {id: "alpha",   income: 2301},
+   {id: "beta",    income: 1121},
+   {id: "chi",     income: 4570},
+   {id: "delta",   income: 2348},
+   {id: "epsilon", income: 2340}
  ];
 
  var pie = new d3plus.Pie()
 
- pie.data(data).render();
+ pie
+    .data(data)
+    .value(function(d) {
+      return d.income;
+    })
+    .render();
+
 
  console.log(data);
 
